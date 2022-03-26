@@ -1,0 +1,91 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local AnomicButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local PrisonLifeButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local V = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Workspace
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+Frame.Position = UDim2.new(0.0104011893, 0, 0.531295478, 0)
+Frame.Size = UDim2.new(0, 411, 0, 312)
+
+UICorner.Parent = Frame
+
+AnomicButton.Name = "AnomicButton"
+AnomicButton.Parent = Frame
+AnomicButton.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+AnomicButton.BackgroundTransparency = 1.000
+AnomicButton.Position = UDim2.new(0.01946472, 0, 0.185897425, 0)
+AnomicButton.Size = UDim2.new(0, 128, 0, 37)
+AnomicButton.Font = Enum.Font.Creepster
+AnomicButton.Text = "Anomic Gui"
+AnomicButton.TextColor3 = Color3.fromRGB(255, 147, 14)
+AnomicButton.TextScaled = true
+AnomicButton.TextSize = 14.000
+AnomicButton.TextWrapped = true
+AnomicButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/HELLLO1073/RobloxStuff/main/SMain.lua"))()
+end)
+
+UICorner_2.Parent = AnomicButton
+
+PrisonLifeButton.Name = "PrisonLifeButton"
+PrisonLifeButton.Parent = Frame
+PrisonLifeButton.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+PrisonLifeButton.BackgroundTransparency = 1.000
+PrisonLifeButton.Position = UDim2.new(0.01946472, 0, 0.326923072, 0)
+PrisonLifeButton.Size = UDim2.new(0, 128, 0, 37)
+PrisonLifeButton.Font = Enum.Font.Creepster
+PrisonLifeButton.Text = "PrisonLife Admin"
+PrisonLifeButton.TextColor3 = Color3.fromRGB(255, 147, 14)
+PrisonLifeButton.TextScaled = true
+PrisonLifeButton.TextSize = 14.000
+PrisonLifeButton.TextWrapped = true
+PrisonLifeButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+end)
+
+
+UICorner_3.Parent = PrisonLifeButton
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(0, 411, 0, 42)
+Title.Font = Enum.Font.Oswald
+Title.Text = "Funny Man"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UICorner_4.Parent = Title
+
+V.Name = "V"
+V.Parent = Frame
+V.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V.BackgroundTransparency = 1.000
+V.Position = UDim2.new(0.905109465, 0, 0.93589741, 0)
+V.Size = UDim2.new(0, 39, 0, 20)
+V.Font = Enum.Font.Oswald
+V.Text = "V .1"
+V.TextColor3 = Color3.fromRGB(255, 255, 255)
+V.TextScaled = true
+V.TextSize = 14.000
+V.TextWrapped = true
+
+UICorner_5.Parent = V
